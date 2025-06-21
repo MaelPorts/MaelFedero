@@ -1,3 +1,5 @@
+
+
 // This script adds smooth scrolling to anchor links in the navigation bar
 document.querySelectorAll('nav a').forEach(link => {
   link.addEventListener('click', function(e) {
@@ -10,18 +12,25 @@ document.querySelectorAll('nav a').forEach(link => {
   });
 });
 
-const projects = [
-  { title: "Portfolio Website", description: "A personal portfolio built with HTML, CSS, and JS." },
-  { title: "Task Manager App", description: "A simple task manager using React and Node.js." }
-];
-
 const projectsSection = document.querySelector('#Projects');
 if (projectsSection) {
   const ul = document.createElement('ul');
-  projects.forEach(proj => {
-    const li = document.createElement('li');
-    li.innerHTML = `<strong>${proj.title}</strong>: ${proj.description}`;
-    ul.appendChild(li);
-  });
-  projectsSection.appendChild(ul);
-} 
+
+  
+  // Fetch projects from backend API
+  fetch('http://localhost:3001/api/projects')
+    .then(res => res.json())
+    .then(projects => {
+      projects.forEach(proj => {
+        const li = document.createElement('li');
+        li.innerHTML = `<strong>${proj.title}</strong>: ${proj.description}`;
+        ul.appendChild(li);
+      });
+      projectsSection.appendChild(ul);
+    })
+    .catch(err => {
+      ul.innerHTML = '<li>Failed to load projects.</li>';
+      projectsSection.appendChild(ul);
+      console.error('Error fetching projects:', err);
+    });
+}

@@ -19,11 +19,22 @@ const db = new sqlite3.Database('./projects.db', (err) => {
   }
 });
 
-// Example route
+// Default Route
 app.get('/', (req, res) => {
   res.send('Backend is running!');
 });
 
 app.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
+});
+
+
+app.get('/api/projects', (req, res) => {
+  db.all('SELECT * FROM projects', [], (err, rows) => {
+    if (err) {
+      res.status(500).json({ error: err.message });
+      return;
+    }
+    res.json(rows);
+  });
 });
