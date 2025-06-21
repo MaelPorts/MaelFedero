@@ -25,18 +25,11 @@ body {
 main {
   flex: 1;
   max-width: 900px;
-  margin: 2rem auto;
+  margin: 0 auto; /* Remove vertical margin so About/Projects can start at the top */
   padding: 0 1rem;
 }
 
-  
-body {
-  font-family: 'Segoe UI', Arial, sans-serif;
-  background: #f8f9fa;
-  color: #222;
-  line-height: 1.6;
-}
-
+/* Header and Nav */
 header {
   background: #222;
   color: #fff;
@@ -72,20 +65,78 @@ nav a:focus {
   color: #ffd700;
 }
 
-main {
-  max-width: 900px;
-  margin: 2rem auto;
-  padding: 0 1rem;
-}
-
-section {
-  margin-bottom: 2.5rem;
+/* Card Section Base */
+.card-section {
   background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.06);
   padding: 2rem;
-  border-radius: 8px;
-  box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+  margin: 0 auto;
+  max-width: 900px;
+  width: 100%;
+  min-height: 100vh;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
+/* Home card stays as default (white, centered) */
+
+/* About and Projects: different backgrounds, top-left content, no margin */
+#About.card-section {
+  background: #f5f8ff !important;
+  align-items: flex-start;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  max-width: 900px;
+  justify-content: flex-start;
+}
+
+#Projects.card-section {
+  background: #f7f7fa !important;
+  align-items: flex-start;
+  margin-top: 0 !important;
+  margin-bottom: 0 !important;
+  padding-top: 2rem;
+  padding-left: 2rem;
+  width: 100%;
+  max-width: 900px;
+  justify-content: flex-start;
+}
+
+/* Home Content */
+.home-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 3rem;
+  padding: 2rem 0;
+}
+
+.home-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+}
+
+.home-content p {
+  font-size: 1.5rem;
+  line-height: 1.7;
+}
+
+.profile-img {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border-radius: 50%;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.10);
+}
+
+/* Social Icons */
 .social-icons {
   margin-top: 1rem;
   display: flex;
@@ -102,12 +153,24 @@ section {
   transform: scale(1.15);
 }
 
+/* Headings */
 h1, h2 {
   color: #1a237e;
   margin-bottom: 1rem;
   justify-content: center;
 }
 
+/* About & Projects headings: big, top-left */
+#About.card-section h2,
+#Projects.card-section h2 {
+  font-size: 2.4rem;
+  text-align: left;
+  margin-top: 0;
+  margin-left: 0;
+  align-self: flex-start;
+}
+
+/* Footer */
 footer {
   text-align: center;
   padding: 1.5rem 0;
@@ -118,14 +181,37 @@ footer {
 }
 
 /* Responsive Design */
-@media (max-width: 600px) {
+@media (max-width: 700px) {
   nav {
     justify-content: center;
   }
   main {
     padding: 0 0.5rem;
   }
-  section {
+  .card-section,
+  #About.card-section,
+  #Projects.card-section {
     padding: 1rem;
+    margin: 0;
+    max-width: 100%;
+    min-height: unset;
+    width: 100%;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .home-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 1.2rem;
+  }
+  .profile-img {
+    margin-top: 1.5rem;
+    max-width: 220px;
+  }
+  #About.card-section,
+  #Projects.card-section {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

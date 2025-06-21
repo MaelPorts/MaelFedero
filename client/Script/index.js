@@ -1,17 +1,5 @@
-
-
-// This script adds smooth scrolling to anchor links in the navigation bar
-document.querySelectorAll('nav a').forEach(link => {
-  link.addEventListener('click', function(e) {
-    const targetId = this.getAttribute('href').slice(1);
-    const target = document.getElementById(targetId);
-    if (target) {
-      e.preventDefault();
-      target.scrollIntoView({ behavior: 'smooth' });
-    }
-  });
-});
-
+// This script fetches and displays projects from the backend API
+// Fetch and display projects from the backend API
 const projectsSection = document.querySelector('#Projects');
 if (projectsSection) {
   const ul = document.createElement('ul');
