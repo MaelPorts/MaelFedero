@@ -19,6 +19,13 @@ const db = new sqlite3.Database('./projects.db', (err) => {
   }
 });
 
+// Create projects table if it doesn't exist
+db.run(`CREATE TABLE IF NOT EXISTS projects (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  title TEXT NOT NULL,
+  description TEXT NOT NULL
+)`);
+
 // Default Route
 app.get('/', (req, res) => {
   res.send('Backend is running!');
