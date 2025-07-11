@@ -1,6 +1,10 @@
 # Node.js dependencies
 node_modules/
 
+# Project storage and sensitive files
+PROJECT_STORAGE.md
+PROJECT_STORAGE_GUIDE.md
+
 # Environment variables
 .env
 .env.local
