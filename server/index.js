@@ -113,7 +113,7 @@ function seedDatabase() {
   const universityProjects = [
     // Year 3
     {
-      title: 'Evaluating ADHD Technologies (Final Year Project)',
+      title: 'Evaluating the use of technology to support ADHD',
       course: 'Final Year Project',
       year: 3,
       year_label: 'Year 3 (Final Year) - 2024/25',
@@ -126,21 +126,6 @@ function seedDatabase() {
       github_url: null,
       download_url: './assets/Fyp',
       assignment_type: 'UX Research / Accessibility / HCI'
-    },
-    {
-      title: 'Inclusive Cooking App',
-      course: 'Usability Engineering',
-      year: 3,
-      year_label: 'Year 3 (Final Year) - 2024/25',
-      grade: 'Completed',
-      description: 'Redesigned and evaluated a cooking app for vulnerable users (ADHD, dyslexia, dyspraxia). Conducted heuristic analysis, created targeted personas, and ran think-aloud usability tests.',
-      technologies: 'Figma, Nielsen heuristics, HTA, usability protocols',
-      skills: 'User research, Critical thinking, Empathy, Attention to detail, Communication',
-      focus_area: 'Neurodivergent accessibility, Inclusive design',
-      image_url: './assets/projects/cooking-app.jpg',
-      github_url: null,
-      download_url: './client/assets/Usability Engineering coursework',
-      assignment_type: 'Usability Engineering / Accessibility / HCI'
     },
     {
       title: 'Library Management System',
@@ -204,56 +189,56 @@ function seedDatabase() {
       assignment_type: 'Mobile App'
     },
     {
-      title: 'UI/UX Prototypes',
+      title: 'Inclusive Cooking App',
       course: 'Usability Engineering',
       year: 2,
       year_label: 'Year 2 - 2023/24',
       grade: '53%',
-      description: 'Series of interactive prototypes demonstrating user-centered design principles and usability best practices.',
+      description: 'UX prototype for an inclusive cooking application designed to accommodate users with diverse abilities and accessibility needs.',
       technologies: 'Figma, Adobe XD, Prototyping, User Testing',
-      skills: 'UI/UX design, Prototyping, User testing, Design thinking',
-      focus_area: 'User-centered design, Interactive prototyping',
-      image_url: './assets/projects/ux-prototypes.jpg',
+      skills: 'UI/UX design, Prototyping, User testing, Design thinking, Accessibility design',
+      focus_area: 'Inclusive design, User-centered design, Interactive prototyping',
+      image_url: './assets/projects/inclusive-cooking-app.jpg',
       github_url: null,
-      download_url: './assets/projects/ux-portfolio.pdf',
-      assignment_type: 'Design Assignment'
+      download_url: './assets/projects/inclusive-cooking-prototype.pdf',
+      assignment_type: 'UX Design Assignment'
     },
     {
-      title: 'Web Programming Project',
-      course: 'Web Programming',
-      year: 2,
-      year_label: 'Year 2 - 2023/24',
-      grade: '56%',
-      description: 'Dynamic web application demonstrating modern web development practices.',
-      technologies: 'HTML5, CSS3, JavaScript, PHP, MySQL',
-      skills: 'Web development, Database integration, Full-stack development',
-      focus_area: 'Dynamic web applications, Server-side programming',
-      image_url: './assets/projects/web-project.jpg',
-      github_url: 'https://github.com/MaelPorts/WebProgramming',
-      download_url: null,
-      assignment_type: 'Web Application'
-    },
-    {
-      title: 'Database Design Project',
+      title: 'CityFit',
       course: 'Database Principles',
       year: 2,
       year_label: 'Year 2 - 2023/24',
       grade: '58%',
-      description: 'Comprehensive database design and implementation for a business scenario.',
-      technologies: 'MySQL, Database Design, SQL, Data Modeling',
-      skills: 'Database design, SQL programming, Data modeling, System analysis',
-      focus_area: 'Relational database design, Business data modeling',
-      image_url: './assets/projects/database-project.jpg',
-      github_url: null,
-      download_url: './assets/projects/database-design.pdf',
-      assignment_type: 'Database Assignment'
+      description: 'Solo project developing a PostgreSQL-backed system for inventory and client management tailored to marine operations. Designed the entire system from scratch: created ER diagrams, built a normalised database, and implemented complex SQL queries.',
+      technologies: 'PostgreSQL, Lucid Chart, ER Diagrams, SQL',
+      skills: 'Independent work, System design, Attention to detail, Logical reasoning, Database design',
+      focus_area: 'Relational DB design, Complex queries, ERD, Schema development, Data redundancy, Optimisation',
+      image_url: './assets/projects/cityfit.jpg',
+      github_url: 'https://github.com/MaelPorts/CityFit',
+      download_url: null,
+      assignment_type: 'Database Systems'
+    },
+    {
+      title: 'ControlCal',
+      course: 'Web Programming',
+      year: 2,
+      year_label: 'Year 2 - 2023/24',
+      grade: '56%',
+      description: 'Solo web development coursework project focused on creating a workout scheduling app. Implemented functionality allowing users to define workout routines with multiple sets and rest periods, including timer functionality and backend data storage.',
+      technologies: 'JavaScript, HTML/CSS, Web Timer APIs, SQLite',
+      skills: 'Independent work, Problem-solving, Thinking outside the box, Attention to detail, Web development',
+      focus_area: 'User-defined routines, Backend integration, Timer logic, Web development',
+      image_url: './assets/projects/controlcal.jpg',
+      github_url: 'https://github.com/MaelPorts/ControlCal',
+      download_url: null,
+      assignment_type: 'Web Development'
     },
     // Year 1
     {
-      title: 'DoggyLove',
+      title: 'Doggy Love',
       course: 'Introduction to Programming',
       year: 1,
-      year_label: 'Year 1',
+      year_label: 'Year 1 - 2022/23',
       grade: 'Completed',
       description: 'First-year project focusing on fundamental programming concepts and basic web development.',
       technologies: 'HTML, CSS, Basic JavaScript',
@@ -288,45 +273,6 @@ function seedDatabase() {
       demo_url: null
     },
     {
-      title: 'Recipe Web App',
-      category: 'Web Development',
-      description: 'Group project to build a full-stack app with authentication, CRUD operations, and user-specific favourites.',
-      technologies: 'Flutter, Dart',
-      features: 'Authentication,CRUD Operations,User Favourites,Team Collaboration',
-      skills: 'Teamwork, Collaboration, Communication, Problem-solving, Agile practices',
-      focus_area: 'Software Engineering Theory and Practice',
-      image_url: './assets/projects/recipe-app.jpg',
-      github_url: 'https://github.com/MaelPorts/recipe-management-app',
-      live_url: null,
-      demo_url: null
-    },
-    {
-      title: 'CityFit',
-      category: 'Database Systems',
-      description: 'Solo project developing a PostgreSQL-backed system for inventory and client management tailored to marine operations. Designed the entire system from scratch: created ER diagrams, built a normalised database, and implemented complex SQL queries.',
-      technologies: 'PostgreSQL, Lucid Chart',
-      features: 'ER Diagrams,Normalised Database,Complex SQL Queries,System Design',
-      skills: 'Independent work, System design, Attention to detail, Logical reasoning',
-      focus_area: 'Relational DB design, Complex queries, ERD, Schema development, Data redundancy, Optimisation',
-      image_url: './assets/projects/cityfit.jpg',
-      github_url: 'https://github.com/MaelPorts/CityFit',
-      live_url: null,
-      demo_url: null
-    },
-    {
-      title: 'ControlCal',
-      category: 'Web Development',
-      description: 'Solo web development coursework project focused on creating a workout scheduling app. Implemented functionality allowing users to define workout routines with multiple sets and rest periods, including timer functionality and backend data storage.',
-      technologies: 'JavaScript, HTML/CSS, Web Timer APIs, SQLite',
-      features: 'Workout Scheduling,Timer Functionality,Backend Storage,User-defined Routines',
-      skills: 'Independent work, Problem-solving, Thinking outside the box, Attention to detail',
-      focus_area: 'User-defined routines, Backend integration, Timer logic',
-      image_url: './assets/projects/controlcal.jpg',
-      github_url: 'https://github.com/MaelPorts/ControlCal',
-      live_url: null,
-      demo_url: null
-    },
-    {
       title: 'BShark E-Commerce Site',
       category: 'E-Commerce',
       description: 'Full-featured e-commerce platform with product catalog, shopping cart, and payment integration.',
@@ -353,46 +299,20 @@ function seedDatabase() {
       demo_url: 'https://maelports.github.io/BMI-Calculator'
     },
     {
-      title: 'Interactive Chessboard',
+      title: 'Chessboard',
       category: 'Game Development',
-      description: 'Interactive chess game with move validation and game state management.',
-      technologies: 'JavaScript, Canvas API, CSS3, Game Logic',
-      features: 'Move Validation,Game State Management,Interactive UI,Chess Rules Engine',
-      skills: 'Game development, Algorithm implementation, Logic programming, Interactive design',
-      focus_area: 'Game logic, Interactive applications',
-      image_url: './assets/projects/chess-game.jpg',
-      github_url: 'https://github.com/MaelPorts/Chess-Game',
+      description: 'Interactive chessboard with piece placement and basic chess rules implementation.',
+      technologies: 'JavaScript, HTML5, CSS3, Game Logic',
+      features: 'Interactive Board,Piece Movement,Chess Rules,Visual Feedback',
+      skills: 'Game development, Logic programming, Interactive design, Algorithm implementation',
+      focus_area: 'Game logic, Board games, Interactive applications',
+      image_url: './assets/projects/chessboard.jpg',
+      github_url: 'https://github.com/MaelPorts/Chessboard',
       live_url: null,
-      demo_url: 'https://maelports.github.io/Chess-Game'
+      demo_url: 'https://maelports.github.io/Chessboard'
     },
     {
-      title: 'Virtual Piano',
-      category: 'Music & Audio',
-      description: 'Virtual piano interface with sound synthesis and keyboard interaction.',
-      technologies: 'JavaScript, Web Audio API, CSS3, MIDI',
-      features: 'Sound Synthesis,Keyboard Interaction,MIDI Support,Audio Effects',
-      skills: 'Audio programming, Web Audio API, Music technology, Interactive interfaces',
-      focus_area: 'Audio applications, Music technology',
-      image_url: './assets/projects/virtual-piano.jpg',
-      github_url: 'https://github.com/MaelPorts/Virtual-Piano',
-      live_url: null,
-      demo_url: 'https://maelports.github.io/Virtual-Piano'
-    },
-    {
-      title: 'Task Manager',
-      category: 'Productivity',
-      description: 'Task management application with local storage and intuitive user interface.',
-      technologies: 'React, LocalStorage, CSS3, JavaScript',
-      features: 'Task Management,Local Storage,Drag & Drop,Filter & Search',
-      skills: 'React development, State management, Local storage, UI/UX design',
-      focus_area: 'Productivity applications, Task management',
-      image_url: './assets/projects/task-manager.jpg',
-      github_url: 'https://github.com/MaelPorts/Task-Manager',
-      live_url: null,
-      demo_url: 'https://maelports.github.io/Task-Manager'
-    },
-    {
-      title: 'Weather Forecast App',
+      title: 'Weather App',
       category: 'Utilities',
       description: 'Real-time weather application with location-based forecasts and responsive design.',
       technologies: 'JavaScript, Weather API, CSS3, Geolocation API',
@@ -403,6 +323,32 @@ function seedDatabase() {
       github_url: 'https://github.com/MaelPorts/Weather-App',
       live_url: null,
       demo_url: 'https://maelports.github.io/Weather-App'
+    },
+    {
+      title: 'To Do List',
+      category: 'Productivity',
+      description: 'Task management application with local storage and intuitive user interface.',
+      technologies: 'JavaScript, LocalStorage, CSS3, HTML5',
+      features: 'Task Management,Local Storage,Add/Edit/Delete,Filter & Search',
+      skills: 'JavaScript development, State management, Local storage, UI/UX design',
+      focus_area: 'Productivity applications, Task management',
+      image_url: './assets/projects/todo-list.jpg',
+      github_url: 'https://github.com/MaelPorts/ToDo-List',
+      live_url: null,
+      demo_url: 'https://maelports.github.io/ToDo-List'
+    },
+    {
+      title: 'Chess Game',
+      category: 'Game Development',
+      description: 'Full chess game implementation with complete rule set and game mechanics.',
+      technologies: 'JavaScript, Canvas API, CSS3, Game Engine',
+      features: 'Full Chess Rules,Move Validation,Game State,Turn Management',
+      skills: 'Game development, Complex algorithms, Chess logic, Interactive gaming',
+      focus_area: 'Complete game implementation, Advanced game logic',
+      image_url: './assets/projects/chess-game.jpg',
+      github_url: 'https://github.com/MaelPorts/Chess-Game',
+      live_url: null,
+      demo_url: 'https://maelports.github.io/Chess-Game'
     }
   ];
 
