@@ -43,3 +43,7 @@ Thumbs.db
 
 # Environment variables
 .env
+
+# Project storage/documentation (keep local only)
+PROJECT_STORAGE.md
+PROJECT_STORAGE_GUIDE.md
