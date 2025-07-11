@@ -1,0 +1,28 @@
+{
+  "name": "mael-federo-portfolio",
+  "version": "1.0.0",
+  "description": "Full-stack portfolio website for Mael Federo",
+  "scripts": {
+    "install-server": "cd server && npm install",
+    "install-all": "npm run install-server",
+    "start-server": "cd server && npm start",
+    "dev-server": "cd server && npm run dev",
+    "serve-client": "cd client && python -m http.server 3000 || php -S localhost:3000 || live-server --port=3000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/MaelPorts/MaelFedero.git"
+  },
+  "author": "Mael Federo",
+  "license": "MIT",
+  "devDependencies": {},
+  "keywords": [
+    "portfolio",
+    "full-stack",
+    "web-development",
+    "javascript",
+    "node.js",
+    "express",
+    "sqlite"
+  ]
+}
