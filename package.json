@@ -17,9 +17,6 @@
   },
   "author": "Mael Federo",
   "license": "MIT",
-  "dependencies": {
-    "sqlite3": "^5.1.7"
-  },
   "keywords": [
     "portfolio",
     "full-stack",
