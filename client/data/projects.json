@@ -122,11 +122,38 @@
     {
       "id": 1,
       "title": "Personal Portfolio Website",
-      "description": "A modern, responsive portfolio website built with Bootstrap 5, featuring a clean design, project showcase, and mobile-optimized user experience.",
-      "technologies": "HTML5, CSS3, JavaScript, Bootstrap 5, Node.js, Express, SQLite",
-      "skills": "Frontend Development, Responsive Design, Backend Development, Database Management",
+      "description": "A modern, responsive portfolio website built with Bootstrap 5, featuring a clean design, project showcase, and mobile-optimized user experience. Includes serverless backend architecture and automatic deployment.",
+      "technologies": "HTML5, CSS3, JavaScript, Bootstrap 5, Node.js, Express, SQLite, Vercel",
+      "skills": "Frontend Development, Responsive Design, Backend Development, Database Management, DevOps",
       "focus_area": "Full-Stack Web Development",
-      "github_url": "https://github.com/MaelPorts/portfolio"
+      "github_url": "https://github.com/MaelPorts/MaelFedero"
+    },
+    {
+      "id": 2,
+      "title": "Responsive Web Components Library",
+      "description": "A collection of reusable, accessible web components built with modern JavaScript. Features modular architecture, responsive design patterns, and comprehensive documentation.",
+      "technologies": "JavaScript ES6+, CSS3, HTML5, Web Components API, Bootstrap",
+      "skills": "Component Architecture, Accessibility Standards, Documentation, Code Organization",
+      "focus_area": "Frontend Architecture",
+      "github_url": "#"
+    },
+    {
+      "id": 3,
+      "title": "Dynamic Data Visualization Dashboard",
+      "description": "Interactive dashboard application demonstrating modern frontend techniques including API integration, real-time data updates, and responsive charts.",
+      "technologies": "JavaScript, Chart.js, Fetch API, CSS Grid, Responsive Design",
+      "skills": "Data Visualization, API Integration, Interactive UI, Performance Optimization",
+      "focus_area": "Data Presentation",
+      "github_url": "#"
+    },
+    {
+      "id": 4,
+      "title": "Accessibility-First Web Application",
+      "description": "Demonstration project showcasing web accessibility best practices, WCAG compliance, and inclusive design principles for users with diverse abilities.",
+      "technologies": "HTML5, CSS3, JavaScript, ARIA, Screen Reader Testing",
+      "skills": "Web Accessibility, WCAG Guidelines, Inclusive Design, User Testing",
+      "focus_area": "Accessibility Engineering",
+      "github_url": "#"
     }
   ]
 }
