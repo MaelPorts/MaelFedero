@@ -47,11 +47,10 @@
                         <h1 class="display-4 fw-bold mb-3">
                             Hi, I'm <span class="text-primary">Mael Federo</span>
                         </h1>
-                        <p class="lead mb-4">French Native Software Engineer Graduate</p>
-                        <p class="mb-4">Tech Consultant • UX Researcher • Musician</p>
-                        <p class="mb-4">I'm a Full-stack engineer that specializes in creating dynamic and responsive web applications, Database Management, and back-end engineering.</p>
-                        
-                        <div class="d-flex gap-3 mb-4">
+                        <p class="lead mb-4">Software Engineer Graduate</p>
+                        <p class="mb-4">Building & helping others is what I do best.</p>
+
+                        <div class="d-flex gap-3 mb-4 social-links">
                             <a href="https://github.com/MaelPorts" target="_blank" class="btn btn-outline-dark rounded-pill">
                                 <i class="bi bi-github me-2"></i>GitHub
                             </a>
@@ -60,7 +59,8 @@
                             </a>
                         </div>
                         
-                        <div class="d-flex gap-3">
+                        <!-- Main action buttons - will move under image on mobile/tablet -->
+                        <div class="d-flex gap-3 main-cta-buttons d-lg-flex d-none">
                             <a href="./pages/projects.html" class="btn btn-dark btn-lg rounded-pill px-4">
                                 Explore My Work <i class="bi bi-arrow-right ms-2"></i>
                             </a>
@@ -72,7 +72,17 @@
                 </div>
                 <div class="col-lg-6 text-center">
                     <div class="hero-image">
-                        <img src="./assets/Melz.png" alt="Profile Picture" class="img-fluid rounded-circle shadow-lg" style="max-width: 400px; width: 100%;">
+                        <img src="./assets/image.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow-lg" style="max-width: 400px; width: 100%;">
+                    </div>
+                    
+                    <!-- Mobile/Tablet buttons - appear under image -->
+                    <div class="d-flex gap-3 mt-4 d-lg-none mobile-cta-buttons justify-content-center">
+                        <a href="./pages/projects.html" class="btn btn-dark btn-lg rounded-pill px-4">
+                            Explore My Work <i class="bi bi-arrow-right ms-2"></i>
+                        </a>
+                        <a href="./assets/CV.docx" class="btn btn-outline-dark btn-lg rounded-pill px-4" target="_blank">
+                            View CV <i class="bi bi-download ms-2"></i>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -91,35 +101,17 @@
                 <div class="col-lg-8 mx-auto">
                     <div class="card border-0 shadow-sm">
                         <div class="card-body p-5">
-                            <h3 class="card-title mb-4">Welcome to My Digital Portfolio</h3>
-                            <p class="card-text lead">This portfolio showcases my journey as a software engineer, featuring both academic achievements and personal projects that demonstrate my passion for technology and innovation.</p>
+                            <p class="card-text">Greetings, I'm Mael Federo, a 25-year-old recent graduate from the University of Portsmouth, where I earned an Upper Second-Class Honours degree in Software Engineering.</p>
                             
-                            <div class="row mt-4">
-                                <div class="col-md-6">
-                                    <h5 class="fw-semibold mb-3">Core Skills</h5>
-                                    <ul class="list-unstyled">
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Full-Stack Web Development</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Database Design & Management</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>UI/UX Research & Design</li>
-                                        <li class="mb-2"><i class="bi bi-check-circle-fill text-success me-2"></i>Project Management</li>
-                                    </ul>
-                                </div>
-                                <div class="col-md-6">
-                                    <h5 class="fw-semibold mb-3">Highlights</h5>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="bi bi-mortarboard text-primary me-2"></i>
-                                        <span>Software Engineering Graduate</span>
-                                    </div>
-                                    <div class="d-flex align-items-center mb-2">
-                                        <i class="bi bi-briefcase text-primary me-2"></i>
-                                        <span>Full-Stack Development & UX Research</span>
-                                    </div>
-                                    <div class="d-flex align-items-center">
-                                        <i class="bi bi-gear text-primary me-2"></i>
-                                        <span>Web Technologies & Database Systems</span>
-                                    </div>
-                                </div>
-                            </div>
+                            <p class="card-text">I've always been passionate about technology. Ever since I was around 6 or 7 years old, I've been fascinated by computers and how they work. What I enjoyed the most was using that knowledge to help others — that feeling of solving problems and making things easier for people brought me a lot of satisfaction.</p>
+                            
+                            <p class="card-text">Around the age of 11, I began expressing my creativity by building simple HTML and CSS index pages. That was the beginning of my journey into the world of tech.</p>
+                            
+                            <p class="card-text">Through my degree, I deepened my understanding of many aspects of technology, from how operating systems function to how to develop, test, maintain, and make software more accessible and user-friendly. I also discovered which areas I'm most passionate about, particularly developing accessible applications that prioritise good UX design.</p>
+                            
+                            <p class="card-text">The journey wasn't always easy. Navigating university during COVID and coming to understand my own neurodiversity made it a true rollercoaster. But becoming a Software Engineer has always been a dream of mine, and through resilience and determination, I achieved results I'm truly proud of.</p>
+                            
+                            <p class="card-text mb-0">Now that I've graduated, I'm eager to use my skills, creativity, and logic to contribute to meaningful projects and to help make the world a better place through technology.</p>
                         </div>
                     </div>
                 </div>
@@ -205,6 +197,33 @@
                                             <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
                                                 <span>Data Structures & Algorithms</span>
                                                 <span class="badge bg-dark fs-6">50%</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Overall Degree Classification -->
+                    <div class="row g-4 mt-2">
+                        <div class="col-md-8 mx-auto">
+                            <div class="card border-0 shadow-sm">
+                                <div class="card-header bg-dark text-white">
+                                    <h4 class="card-title mb-0">Overall Degree Classification</h4>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row g-3">
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
+                                                <span class="fw-semibold">BSc Software Engineering</span>
+                                                <span class="badge bg-dark fs-6">2:1</span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
+                                                <span class="fw-semibold">Overall GPA</span>
+                                                <span class="badge bg-dark fs-6">3.05</span>
                                             </div>
                                         </div>
                                     </div>
