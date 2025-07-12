@@ -148,6 +148,16 @@
       "focus_area": "Health applications, Data visualization",
       "github_url": "https://github.com/MaelPorts/BMI-Calculator",
       "live_demo_url": "https://maelports.github.io/BMI-Calculator"
+    },
+    {
+      "id": 4,
+      "title": "To Do List",
+      "description": "Dynamic task management application with add, edit, delete functionality and local storage persistence.",
+      "technologies": "JavaScript, HTML5, CSS3, Local Storage API",
+      "skills": "JavaScript programming, DOM manipulation, Local storage, Task management",
+      "focus_area": "Productivity applications, Local data management",
+      "github_url": "https://github.com/MaelPorts/To-Do-List",
+      "live_demo_url": "https://maelports.github.io/To-Do-List"
     }
   ]
 }
