@@ -13,6 +13,17 @@
     text-decoration: none !important;
 }
 
+/* Exception for badges - preserve their colors */
+.project-card:hover .badge {
+    color: white !important;
+    background-color: #212529 !important;
+}
+
+.project-card:hover .badge.bg-dark {
+    color: white !important;
+    background-color: #212529 !important;
+}
+
 .project-card-title:hover,
 .project-card-subtitle:hover,
 .project-description:hover,
