@@ -11,8 +11,16 @@ export class ProjectService {
             }
             return await response.json();
         } catch (error) {
-            console.error('Failed to fetch technical projects:', error);
-            throw error;
+            console.error('Failed to fetch technical projects from API, trying static data:', error);
+            // Fallback to static JSON file
+            try {
+                const response = await fetch('/data/projects.json');
+                const data = await response.json();
+                return data.technicalProjects || [];
+            } catch (fallbackError) {
+                console.error('Failed to fetch technical projects from static data:', fallbackError);
+                throw fallbackError;
+            }
         }
     }
 
@@ -24,8 +32,16 @@ export class ProjectService {
             }
             return await response.json();
         } catch (error) {
-            console.error('Failed to fetch university projects:', error);
-            throw error;
+            console.error('Failed to fetch university projects from API, trying static data:', error);
+            // Fallback to static JSON file
+            try {
+                const response = await fetch('/data/projects.json');
+                const data = await response.json();
+                return data.universityProjects || [];
+            } catch (fallbackError) {
+                console.error('Failed to fetch university projects from static data:', fallbackError);
+                throw fallbackError;
+            }
         }
     }
 
