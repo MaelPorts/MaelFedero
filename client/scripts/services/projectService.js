@@ -1,10 +1,11 @@
 // Service for handling all project-related API calls
 export class ProjectService {
-    static BASE_URL = 'http://localhost:3001/api';
+    // Use relative path for API calls - works both locally and on Vercel
+    static BASE_URL = '/api';
 
     static async getTechnicalProjects() {
         try {
-            const response = await fetch(`${this.BASE_URL}/technical-projects`);
+            const response = await fetch(`${this.BASE_URL}/projects?type=technical`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
@@ -17,7 +18,7 @@ export class ProjectService {
 
     static async getUniversityProjects() {
         try {
-            const response = await fetch(`${this.BASE_URL}/university-projects`);
+            const response = await fetch(`${this.BASE_URL}/projects?type=university`);
             if (!response.ok) {
                 throw new Error(`HTTP error! status: ${response.status}`);
             }
