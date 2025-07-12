@@ -158,6 +158,26 @@
       "focus_area": "Productivity applications, Local data management",
       "github_url": "https://github.com/MaelPorts/To-Do-List",
       "live_demo_url": "https://maelports.github.io/To-Do-List"
+    },
+    {
+      "id": 5,
+      "title": "Weather App",
+      "description": "Real-time weather application with location-based forecasts and interactive weather data visualization.",
+      "technologies": "JavaScript, HTML5, CSS3, Weather API, Geolocation API",
+      "skills": "API integration, Asynchronous programming, Data visualization, Location services",
+      "focus_area": "Weather applications, API consumption",
+      "github_url": "https://github.com/MaelPorts/Weather-App",
+      "live_demo_url": "https://maelports.github.io/Weather-App"
+    },
+    {
+      "id": 6,
+      "title": "Chessboard",
+      "description": "Interactive chess game with piece movement validation, game state management, and visual feedback.",
+      "technologies": "JavaScript, HTML5, CSS3, Game Logic",
+      "skills": "Game development, Logic programming, DOM manipulation, Object-oriented programming",
+      "focus_area": "Game development, Chess logic implementation",
+      "github_url": "https://github.com/MaelPorts/Chessboard",
+      "live_demo_url": "https://maelports.github.io/Chessboard"
     }
   ]
 }
