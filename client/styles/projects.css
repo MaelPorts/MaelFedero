@@ -1,5 +1,26 @@
 /* Projects Page Styles */
 
+/* Fix for text disappearing on hover */
+.project-card * {
+    user-select: text !important;
+    -webkit-user-select: text !important;
+    -moz-user-select: text !important;
+    -ms-user-select: text !important;
+}
+
+.project-card:hover * {
+    color: inherit !important;
+    text-decoration: none !important;
+}
+
+.project-card-title:hover,
+.project-card-subtitle:hover,
+.project-description:hover,
+.skill-tag:hover {
+    opacity: 1 !important;
+    visibility: visible !important;
+}
+
 /* Projects Hero Section */
 .projects-hero {
     background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
@@ -12,6 +33,18 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
+    /* Fallback for text selection */
+    color: #0d6efd;
+}
+
+.projects-hero h1::selection {
+    -webkit-text-fill-color: white;
+    background: #0d6efd;
+}
+
+.projects-hero h1::-moz-selection {
+    -webkit-text-fill-color: white;
+    background: #0d6efd;
 }
 
 /* Navigation Pills */
@@ -38,6 +71,14 @@
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+}
+
+.nav-pills .nav-link.active:hover {
+    background-color: #0056b3;
+    border-color: #0056b3;
+    color: white !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 25px rgba(13, 110, 253, 0.4);
 }
 
 /* Project Cards */
