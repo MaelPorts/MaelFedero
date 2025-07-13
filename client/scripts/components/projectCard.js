@@ -144,9 +144,9 @@ export class ProjectCard {
             `);
         }
         
-        if (project.demo_url || project.live_url) {
+        if (project.demo_url || project.live_url || project.live_demo_url) {
             buttons.push(`
-                <a href="${project.demo_url || project.live_url}" target="_blank" class="btn btn-primary btn-sm rounded-pill">
+                <a href="${project.demo_url || project.live_url || project.live_demo_url}" target="_blank" class="btn btn-primary btn-sm rounded-pill">
                     <i class="bi bi-eye me-1"></i>Demo
                 </a>
             `);
