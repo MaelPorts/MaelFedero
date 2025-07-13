@@ -79,7 +79,7 @@
       "year_label": "Year 2", 
       "grade": "58%",
       "description": "Solo project developing a PostgreSQL-backed system for inventory and client management tailored to marine operations. Designed the entire system from scratch: created ER diagrams, built a normalised database, and implemented complex SQL queries to manage transactional data.",
-      "technologies": "PostgreSQL, Lucid Chart",
+      "technologies": "PostgreSQL, Lucid Chart, Query Optimisation",
       "skills": "Independent Work, System Design, Attention to Detail, Logical Reasoning",
       "focus_area": "Relational DB Design, Complex Queries, ERD, Schema Development",
       "assignment_type": "Coursework",
@@ -87,8 +87,8 @@
     },
     {
       "id": 7,
-      "title": "ControlCal Calendar Management",
-      "course": "Data Structures & Algorithms",
+      "title": "ControlCal Workout Management",
+      "course": "Web Programming",
       "year": 2,
       "year_label": "Year 2",
       "grade": "50%",
@@ -117,7 +117,7 @@
     {
       "id": 1,
       "title": "Portfolio Website",
-      "description": "A modern, responsive portfolio website showcasing professional experience, academic achievements, and technical projects. The application features a clean Bootstrap-based design with dynamic project management, serverless backend integration, and mobile-optimized user experience. Users can explore technical and academic projects organized by categories and years, with detailed project information including technologies used, skills developed, and grade achievements. The portfolio includes an engaging about section, academic performance showcase, and seamless navigation between different project types.",
+      "description": "A modern, responsive portfolio website showcasing professional experience, academic achievements, and technical projects.",
       "technologies": "HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Node.js, Express, SQLite, Vercel, Git & GitHub",
       "skills": "Frontend Development, Responsive Design, Backend Development, Database Management, Serverless Deployment",
       "focus_area": "Full-Stack Web Development",
@@ -127,7 +127,7 @@
     {
       "id": 2,
       "title": "BShark E-Commerce Site",
-      "description": "Developed an E-Commerce website for a friend of mine who sells clothes",
+      "description": "Developed an E-Commerce website for a friend's business, BShark, which sells custom-made shark-themed clothing. The site features a user-friendly interface, product listings, and a secure checkout process.",
       "technologies": "React, React Router, Supabase, TypeScript",
       "skills": "E-commerce Development, React Development, Database Integration, TypeScript Programming",
       "focus_area": "E-commerce Solutions",
