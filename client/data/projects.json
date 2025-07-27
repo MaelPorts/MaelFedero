@@ -17,7 +17,7 @@
     {
       "id": 2,
       "title": "Library Management System",
-      "course": "Software Engineering Culture", 
+      "course": "Software Engineering Culture",
       "year": 3,
       "year_label": "Year 3",
       "grade": "64%",
@@ -32,7 +32,7 @@
     {
       "id": 3,
       "title": "Inclusive Cooking Platform",
-      "course": "Usability Engineering", 
+      "course": "Usability Engineering",
       "year": 3,
       "year_label": "Year 3",
       "grade": "60%",
@@ -49,7 +49,7 @@
       "course": "Project Management",
       "year": 3,
       "year_label": "Year 3",
-      "grade": "56%", 
+      "grade": "56%",
       "description": "Development and implementation of a comprehensive project management framework tailored for software development teams.",
       "technologies": "Project Management Tools, Documentation, Process Design",
       "skills": "Project Planning, Team Management, Risk Assessment, Process Optimization",
@@ -76,7 +76,7 @@
       "title": "CityFit Database Management",
       "course": "Database Principles",
       "year": 2,
-      "year_label": "Year 2", 
+      "year_label": "Year 2",
       "grade": "58%",
       "description": "Solo project developing a PostgreSQL-backed system for inventory and client management tailored to marine operations. Designed the entire system from scratch: created ER diagrams, built a normalised database, and implemented complex SQL queries to manage transactional data.",
       "technologies": "PostgreSQL, Lucid Chart, Query Optimisation",
@@ -153,6 +153,16 @@
       "focus_area": "Task Management Applications",
       "github_url": "https://github.com/MaelPorts/To-Do",
       "live_demo_url": "https://maelports.github.io/To-Do/"
+    },
+    {
+      "id": 5,
+      "title": "KnightlyTracker - Discord Bot",
+      "description": "A Discord bot that helps users track their gaming activities, manage their game libraries, and connect with friends. The bot features commands for adding/removing games, viewing game stats, and receiving personalized game recommendations.",
+      "technologies": "Node.js, Discord.js, JavaScript ES6+",
+      "skills": "Discord Bot Development, State Management, API Integration, JavaScript Programming",
+      "focus_area": "Gaming Applications",
+      "github_url": "https://github.com/MaelPorts/KnightlyTracker",
+      "live_demo_url": "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot"
     }
   ]
 }
