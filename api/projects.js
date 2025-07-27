@@ -191,7 +191,7 @@ const technicalProjects = [
     title: "KnightlyTracker - Discord Bot",
     description:
       "A Discord bot that helps users track their gaming activities, manage their game libraries, and connect with friends. The bot features commands for adding/removing games, viewing game stats, and receiving personalized game recommendations.",
-    technologies: "Node.js, Discord.js,, JavaScript ES6+",
+    technologies: "Node.js, Discord.js, JavaScript ES6+",
     skills:
       "Discord Bot Development, State Management, API Integration, JavaScript Programming",
     focus_area: "Gaming Applications",
