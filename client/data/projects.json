@@ -147,7 +147,7 @@
     {
       "id": 4,
       "title": "To-Do List App",
-      "description": "A clean and responsive task management web application that allows users to create, manage, and track their daily tasks. The app features a modern, centered design with the ability to add new tasks, mark them as complete/incomplete, and delete them when no longer needed. Tasks are visually distinguished with tick/untick icons and strikethrough styling for completed items. The application includes persistent storage functionality, automatically saving tasks to localStorage so users can maintain their task list across browser sessions.",
+      "description": "A clean and responsive task management web application that allows users to create, manage, and track their daily tasks.",
       "technologies": "React 18, Vite, Tailwind CSS, JavaScript ES6+, localStorage API, HTML5",
       "skills": "React Development, State Management, Local Storage, Task Management, Modern Build Tools",
       "focus_area": "Task Management Applications",
@@ -157,9 +157,9 @@
     {
       "id": 5,
       "title": "KnightlyTracker - Discord Bot",
-      "description": "A Discord bot that helps users track their gaming activities, manage their game libraries, and connect with friends. The bot features commands for adding/removing games, viewing game stats, and receiving personalized game recommendations.",
+      "description": "A Discord bot that helps users track their gaming activities, manage their game libraries, and connect with friends.",
       "technologies": "Node.js, Discord.js, JavaScript ES6+",
-      "skills": "Discord Bot Development, State Management, API Integration, JavaScript Programming",
+      "skills": "Discord Bot Development, State Management, API Integration, JavaScript Programming, Backend Development",
       "focus_area": "Gaming Applications",
       "github_url": "https://github.com/MaelPorts/KnightlyTracker",
       "live_demo_url": "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot"
