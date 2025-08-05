@@ -117,7 +117,7 @@
     {
       "id": 1,
       "title": "Portfolio Website",
-      "description": "A modern, responsive portfolio website showcasing professional experience, academic achievements, and technical projects.",
+      "description": "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects.",
       "technologies": "HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Node.js, Express, SQLite, Vercel, Git & GitHub",
       "skills": "Frontend Development, Responsive Design, Backend Development, Database Management, Serverless Deployment",
       "focus_area": "Full-Stack Web Development",
