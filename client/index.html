@@ -1,264 +1,425 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
     <meta charset="UTF-8" />
     <title>Mael Federo - Portfolio</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
     <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
     <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
     <!-- Modern Portfolio Styles -->
-    <link rel="stylesheet" href="./styles/modern.css">
-</head>
-<body>
+    <link rel="stylesheet" href="./styles/modern.css" />
+  </head>
+  <body>
     <!-- Modern Navigation -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
-        <div class="container">
-            <a class="navbar-brand fw-bold" href="#Home">
-                <i class="bi bi-code-slash me-2"></i>Mael Federo
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#Home">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./pages/projects.html">Projects</a>
-                    </li>
-                </ul>
-            </div>
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top"
+    >
+      <div class="container">
+        <a class="navbar-brand fw-bold" href="#Home">
+          <i class="bi bi-code-slash me-2"></i>Mael Federo
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#Home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./pages/projects.html">Projects</a>
+            </li>
+          </ul>
         </div>
+      </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="Home" class="hero-section">
-        <div class="container">
-            <div class="row align-items-center min-vh-100 pt-5">
-                <div class="col-lg-6">
-                    <div class="hero-content">
-                        <h1 class="display-4 fw-bold mb-3">
-                            Hi, I'm <span class="text-primary">Mael Federo</span>
-                        </h1>
-                        <p class="lead mb-4">Software Engineer Graduate</p>
-                        <p class="mb-4">Building & helping others is what I do best.</p>
+      <div class="container">
+        <div class="row align-items-center min-vh-100 pt-5">
+          <div class="col-lg-6">
+            <div class="hero-content">
+              <h1 class="display-4 fw-bold mb-3">
+                Hi, I'm <span class="text-primary">Mael Federo</span>
+              </h1>
+              <p class="lead mb-4">Software Engineer Graduate</p>
+              <p class="mb-4">Building & helping others is what I do best.</p>
 
-                        <div class="d-flex gap-3 mb-4 social-links">
-                            <a href="https://github.com/MaelPorts" target="_blank" class="btn btn-outline-dark rounded-pill">
-                                <i class="bi bi-github me-2"></i>GitHub
-                            </a>
-                            <a href="https://www.linkedin.com/in/mael-federo-38629429a/" target="_blank" class="btn btn-outline-primary rounded-pill">
-                                <i class="bi bi-linkedin me-2"></i>LinkedIn
-                            </a>
-                        </div>
-                        
-                        <!-- Main action buttons - will move under image on mobile/tablet -->
-                        <div class="d-flex gap-3 main-cta-buttons d-lg-flex d-none mt-5">
-                            <a href="./pages/projects.html" class="btn btn-dark btn-lg rounded-pill px-4">
-                                Explore My Work <i class="bi bi-arrow-right ms-2"></i>
-                            </a>
-                            <a href="./assets/CV.docx" class="btn btn-outline-dark btn-lg rounded-pill px-4" target="_blank">
-                                View CV <i class="bi bi-download ms-2"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6 text-center">
-                    <div class="hero-image">
-                        <img src="./assets/image.jpg" alt="Profile Picture" class="img-fluid rounded-circle shadow-lg" style="max-width: 400px; width: 100%;">
-                    </div>
-                    
-                    <!-- Mobile/Tablet buttons - appear under image -->
-                    <div class="d-flex gap-3 mt-5 d-lg-none mobile-cta-buttons justify-content-center">
-                        <a href="./pages/projects.html" class="btn btn-dark btn-lg rounded-pill px-4">
-                            Explore My Work <i class="bi bi-arrow-right ms-2"></i>
-                        </a>
-                        <a href="./assets/CV.docx" class="btn btn-outline-dark btn-lg rounded-pill px-4" target="_blank">
-                            View CV <i class="bi bi-download ms-2"></i>
-                        </a>
-                    </div>
-                </div>
+              <div class="d-flex gap-3 mb-4 social-links">
+                <a
+                  href="https://github.com/MaelPorts"
+                  target="_blank"
+                  class="btn btn-outline-dark rounded-pill"
+                >
+                  <i class="bi bi-github me-2"></i>GitHub
+                </a>
+                <a
+                  href="https://www.linkedin.com/in/mael-federo-38629429a/"
+                  target="_blank"
+                  class="btn btn-outline-primary rounded-pill"
+                >
+                  <i class="bi bi-linkedin me-2"></i>LinkedIn
+                </a>
+              </div>
+
+              <!-- Main action buttons - will move under image on mobile/tablet -->
+              <div class="d-flex gap-3 main-cta-buttons d-lg-flex d-none mt-5">
+                <a
+                  href="./pages/projects.html"
+                  class="btn btn-dark btn-lg rounded-pill px-4"
+                >
+                  Explore My Work <i class="bi bi-arrow-right ms-2"></i>
+                </a>
+                <a
+                  href="./assets/CV.docx"
+                  class="btn btn-outline-dark btn-lg rounded-pill px-4"
+                  target="_blank"
+                >
+                  View CV <i class="bi bi-download ms-2"></i>
+                </a>
+              </div>
             </div>
+          </div>
+          <div class="col-lg-6 text-center">
+            <div class="hero-image">
+              <img
+                src="./assets/image.jpg"
+                alt="Profile Picture"
+                class="img-fluid"
+                style="
+                  max-width: 400px;
+                  width: 100%;
+                  object-fit: cover;
+                  border-radius: 0;
+                  box-shadow: none;
+                  border: none;
+                "
+              />
+            </div>
+
+            <!-- Mobile/Tablet buttons - appear under image -->
+            <div
+              class="d-flex gap-3 mt-5 d-lg-none mobile-cta-buttons justify-content-center"
+            >
+              <a
+                href="./pages/projects.html"
+                class="btn btn-dark btn-lg rounded-pill px-4"
+              >
+                Explore My Work <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+              <a
+                href="./assets/CV.docx"
+                class="btn btn-outline-dark btn-lg rounded-pill px-4"
+                target="_blank"
+              >
+                View CV <i class="bi bi-download ms-2"></i>
+              </a>
+            </div>
+          </div>
         </div>
+      </div>
+    </section>
+    <!-- Certifications & Awards Section -->
+    <section id="PersonalAchievements" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5 fw-bold">Certifications & Awards</h2>
+          </div>
+        </div>
+        <div class="row g-4">
+          <div class="col-md-8 mx-auto">
+            <div class="card border-0 shadow-sm">
+              <div class="card-header bg-dark text-white">
+                <h4 class="card-title mb-0">Personal Achievements</h4>
+              </div>
+              <div class="card-body">
+                <div class="row g-3">
+                  <div class="col-12">
+                    <div
+                      class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                    >
+                      <span class="fw-semibold"
+                        >Hacking 4MoD Foundation Module
+                      </span>
+                      <span class="badge bg-dark fs-6"
+                        >Ministry Of Defence</span
+                      >
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <div
+                      class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                    >
+                      <span class="fw-semibold"
+                        >Undergraduate Personal Achievement Award
+                      </span>
+                      <span class="badge bg-dark fs-6">
+                        University of Portsmouth</span
+                      >
+                    </div>
+                  </div>
+                  <!-- Add more certifications/awards here as needed -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- About Section -->
     <section id="About" class="py-5 bg-light">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-center mb-5 fw-bold">About Me</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="card border-0 shadow-sm">
-                        <div class="card-body p-5">
-                            <div class="row">
-                                <div class="col-12">
-                                    <p class="card-text fs-5">Greetings,<br>I'm Mael Federo, a 25-year-old recent graduate from the University of Portsmouth, where I earned an Upper Second-Class Honours degree in Software Engineering.</p>
-                                    
-                                    <p class="card-text fs-5">I've always been passionate about technology. Ever since I was around 6 or 7 years old, I've been fascinated by computers and how they work. What I enjoyed the most was using that knowledge to help others — that feeling of solving problems and making things easier for people brought me a lot of satisfaction.</p>
-                                    
-                                    <p class="card-text fs-5">Around the age of 11, I began expressing my creativity by building simple HTML and CSS index pages. That was the beginning of my journey into the world of tech.</p>
-                                    
-                                    <p class="card-text fs-5">Through my degree, I deepened my understanding of many aspects of technology, from how operating systems function to how to develop, test, maintain, and make software more accessible and user-friendly. I also discovered which areas I'm most passionate about, particularly developing accessible applications that prioritise good UX design.</p>
-                                    
-                                    <p class="card-text fs-5">The journey wasn't always easy. Navigating university during COVID and coming to understand my own neurodiversity made it a true rollercoaster. But becoming a Software Engineer has always been a dream of mine, and through resilience and determination, I achieved results I'm truly proud of.</p>
-                                    
-                                    <p class="card-text fs-5 mb-0">Now that I've graduated, I'm eager to use my skills, creativity, and logic to contribute to meaningful projects and to help make the world a better place through technology.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5 fw-bold">About Me</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="card border-0 shadow-sm">
+              <div class="card-body p-5">
+                <div class="row">
+                  <div class="col-12">
+                    <p class="card-text fs-5">
+                      Greetings,<br />I'm Mael Federo, a 25-year-old recent
+                      graduate from the University of Portsmouth, where I earned
+                      an Upper Second-Class Honours degree in Software
+                      Engineering.
+                    </p>
+
+                    <p class="card-text fs-5">
+                      I've always been passionate about technology. Ever since I
+                      was around 6 or 7 years old, I've been fascinated by
+                      computers and how they work. What I enjoyed the most was
+                      solving problems and making things easier for people
+                      through technology.
+                    </p>
+
+                    <p class="card-text fs-5">
+                      Around the age of 11, I began expressing my creativity by
+                      building simple HTML and CSS index pages. That was the
+                      beginning of my journey into the world of tech.
+                    </p>
+
+                    <p class="card-text fs-5">
+                      Through my degree, I deepened my understanding of many
+                      aspects of technology, from how operating systems function
+                      to how to develop, test, maintain, and make software more
+                      accessible and user-friendly. I also discovered which
+                      areas I'm most passionate about, particularly developing
+                      accessible applications that prioritise good UX design.
+                    </p>
+
+                    <p class="card-text fs-5">
+                      The journey wasn't always easy. Navigating university
+                      during COVID and coming to understand my own
+                      neurodiversity made it a true rollercoaster. But becoming
+                      a Software Engineer has always been a dream of mine, and
+                      through resilience and determination, I achieved results
+                      I'm truly proud of.
+                    </p>
+
+                    <p class="card-text fs-5 mb-0">
+                      Now that I've graduated, I'm eager to use my skills,
+                      creativity, and logic to contribute to meaningful projects
+                      and to help make the world a better place through
+                      technology.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Academic Performance Section -->
     <section id="Academics" class="py-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <h2 class="text-center mb-5 fw-bold">Academic Performance</h2>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-10 mx-auto">
-                    <div class="row g-4">
-                        <!-- Year 3 -->
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-header bg-dark text-white">
-                                    <h4 class="card-title mb-0">Year 3 (Final Year)</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row g-3">
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Final Year Project</span>
-                                                <span class="badge bg-dark fs-6">71%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Software Engineering Culture</span>
-                                                <span class="badge bg-dark fs-6">64%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Usability Testing</span>
-                                                <span class="badge bg-dark fs-6">60%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Project Management</span>
-                                                <span class="badge bg-dark fs-6">56%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <!-- Year 2 -->
-                        <div class="col-md-6">
-                            <div class="card h-100 border-0 shadow-sm">
-                                <div class="card-header bg-dark text-white">
-                                    <h4 class="card-title mb-0">Year 2 Performance</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row g-3">
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Database Principles</span>
-                                                <span class="badge bg-dark fs-6">58%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Web Programming</span>
-                                                <span class="badge bg-dark fs-6">56%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Usability Engineering</span>
-                                                <span class="badge bg-dark fs-6">53%</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span>Data Structures & Algorithms</span>
-                                                <span class="badge bg-dark fs-6">50%</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- Overall Degree Classification -->
-                    <div class="row g-4 mt-2">
-                        <div class="col-md-8 mx-auto">
-                            <div class="card border-0 shadow-sm">
-                                <div class="card-header bg-dark text-white">
-                                    <h4 class="card-title mb-0">Overall Degree Classification</h4>
-                                </div>
-                                <div class="card-body">
-                                    <div class="row g-3">
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span class="fw-semibold">BSc Software Engineering</span>
-                                                <span class="badge bg-dark fs-6">2:1</span>
-                                            </div>
-                                        </div>
-                                        <div class="col-12">
-                                            <div class="d-flex justify-content-between align-items-center p-3 bg-light rounded">
-                                                <span class="fw-semibold">Overall GPA</span>
-                                                <span class="badge bg-dark fs-6">3.05</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <div class="text-center mt-5">
-                        <a href="./pages/projects.html#academic" class="btn btn-dark btn-lg rounded-pill px-4">
-                            View University Projects <i class="bi bi-arrow-right ms-2"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="text-center mb-5 fw-bold">Academic Performance</h2>
+          </div>
         </div>
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="row g-4">
+              <!-- Year 3 -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-header bg-dark text-white">
+                    <h4 class="card-title mb-0">Year 3 (Final Year)</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Final Year Project</span>
+                          <span class="badge bg-dark fs-6">71%</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Software Engineering Culture</span>
+                          <span class="badge bg-dark fs-6">64%</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Usability Testing</span>
+                          <span class="badge bg-dark fs-6">60%</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Project Management</span>
+                          <span class="badge bg-dark fs-6">56%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Year 2 -->
+              <div class="col-md-6">
+                <div class="card h-100 border-0 shadow-sm">
+                  <div class="card-header bg-dark text-white">
+                    <h4 class="card-title mb-0">Year 2 Performance</h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Database Principles</span>
+                          <span class="badge bg-dark fs-6">58%</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Web Programming</span>
+                          <span class="badge bg-dark fs-6">56%</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Usability Engineering</span>
+                          <span class="badge bg-dark fs-6">53%</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span>Data Structures & Algorithms</span>
+                          <span class="badge bg-dark fs-6">50%</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Overall Degree Classification -->
+            <div class="row g-4 mt-2">
+              <div class="col-md-8 mx-auto">
+                <div class="card border-0 shadow-sm">
+                  <div class="card-header bg-dark text-white">
+                    <h4 class="card-title mb-0">
+                      Overall Degree Classification
+                    </h4>
+                  </div>
+                  <div class="card-body">
+                    <div class="row g-3">
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span class="fw-semibold"
+                            >BSc Software Engineering</span
+                          >
+                          <span class="badge bg-dark fs-6">2:1</span>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div
+                          class="d-flex justify-content-between align-items-center p-3 bg-light rounded"
+                        >
+                          <span class="fw-semibold">Overall GPA</span>
+                          <span class="badge bg-dark fs-6">3.05</span>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <a
+                href="./pages/projects.html#academic"
+                class="btn btn-dark btn-lg rounded-pill px-4"
+              >
+                View University Projects <i class="bi bi-arrow-right ms-2"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Footer -->
     <footer class="bg-dark text-white py-4">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 text-center">
-                    <p class="mb-0">© 2025 Mael Federo. All rights reserved.</p>
-                </div>
-            </div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <p class="mb-0">© 2025 Mael Federo. All rights reserved.</p>
+          </div>
         </div>
+      </div>
     </footer>
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="./scripts/index.js"></script>
-</body>
+  </body>
 </html>
