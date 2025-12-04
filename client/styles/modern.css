@@ -1,7 +1,7 @@
 /* Modern Portfolio Styles */
 :root {
-  --primary-color: #0d6efd;
-  --dark-color: #212529;
+  --primary-color: #212529;
+  --dark-color: #474a4d;
   --light-bg: #f8f9fa;
   --border-radius: 12px;
   --shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
@@ -36,20 +36,20 @@ body {
 }
 
 .navbar-brand i {
-  color: var(--primary-color);
+  color: #0d6efd;
 }
 
 .nav-link {
   font-weight: 500;
-  color: var(--dark-color) !important;
-  padding: 0.5rem 1rem !important;
+  color: var(--dark-color);
+  padding: 0.5rem 1rem;
   border-radius: 50px;
   transition: all 0.3s ease;
 }
 
 .nav-link:hover {
   background-color: var(--light-bg);
-  color: var(--primary-color) !important;
+  color: var(--primary-color);
 }
 
 /* Hero Section */
@@ -64,7 +64,7 @@ body {
 }
 
 .hero-content .text-primary {
-  background: linear-gradient(45deg, var(--primary-color), #0056b3);
+  background: linear-gradient(45deg, var(--primary-color), #474a4d);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -115,7 +115,7 @@ body {
 
 .btn-outline-primary:hover {
   transform: translateY(-2px);
-  box-shadow: 0 8px 25px rgba(13, 110, 253, 0.3);
+  box-shadow: 0 8px 25px rgba(33, 37, 41, 0.3);
 }
 
 /* Cards */

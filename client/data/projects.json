@@ -24,7 +24,7 @@
       "description": "Group project to enhance an existing library management system. Assessed the current architecture and implemented improvements focused on scalability, data integrity, and maintainability. Delivered technical documentation outlining DevOps-oriented recommendations for deployment and system reliability.",
       "technologies": "GitHub Actions, CI/CD Planning, ERDs, Docker",
       "skills": "Teamwork, Analytical Thinking, Documentation, Strategic Planning, Problem-solving",
-      "focus_area": "DevOps Principles, Infrastructure Improvement, System Performance",
+      "focus_area": "DevOps Principles, Infrastructure Improvement, SDLC",
       "assignment_type": "Coursework",
       "github_url": "https://github.com/54d1q/soft-cult",
       "download_url": "./assets/Software Engineering Culture.docx"
@@ -39,7 +39,7 @@
       "description": "Redesigned and evaluated a cooking app for vulnerable users (ADHD, dyslexia, dyspraxia). Conducted heuristic analysis, created targeted personas, and ran think-aloud usability tests.",
       "technologies": "Figma, Nielsen Heuristics, HTA, Usability Protocols",
       "skills": "User Research, Critical Thinking, Empathy, Attention to Detail, Communication",
-      "focus_area": "Neurodivergent Accessibility, Inclusive Design",
+      "focus_area": "Accessibility, Inclusive Design",
       "assignment_type": "Coursework",
       "download_url": "./assets/Usability Engineering coursework.docx"
     },
@@ -66,8 +66,8 @@
       "grade": "56%",
       "description": "Group project to build a full-stack app with authentication, CRUD operations, and user-specific favourites.",
       "technologies": "Flutter, Dart",
-      "skills": "Teamwork, Collaboration, Communication, Problem-solving, Agile Practices",
-      "focus_area": "Web Development",
+      "skills": "Flutter, Dart",
+      "focus_area": "Web Development, Teamwork",
       "assignment_type": "Coursework",
       "github_url": "https://github.com/MaelPorts/recipe-management-app"
     },
@@ -80,7 +80,7 @@
       "grade": "58%",
       "description": "Solo project developing a PostgreSQL-backed system for inventory and client management tailored to marine operations. Designed the entire system from scratch: created ER diagrams, built a normalised database, and implemented complex SQL queries to manage transactional data.",
       "technologies": "PostgreSQL, Lucid Chart, Query Optimisation",
-      "skills": "Independent Work, System Design, Attention to Detail, Logical Reasoning",
+      "skills": "PostgreSQL",
       "focus_area": "Relational DB Design, Complex Queries, ERD, Schema Development",
       "assignment_type": "Coursework",
       "github_url": "https://github.com/MaelPorts/CityFit"
@@ -94,8 +94,8 @@
       "grade": "50%",
       "description": "Solo web development coursework project focused on creating a workout scheduling app. Implemented functionality allowing users to define workout routines with multiple sets and rest periods, including timer functionality and backend data storage.",
       "technologies": "JavaScript, HTML/CSS, Express, SQLite",
-      "skills": "Independent Work, Problem-solving, Thinking Outside the Box, Attention to Detail",
-      "focus_area": "User-defined Routines, Backend Integration, Timer Logic",
+      "skills": "HTML/CSS, JavaScript, ExpressJS",
+      "focus_area": "ExpressJS, HTML/CSS, Javascript",
       "assignment_type": "Coursework",
       "github_url": "https://github.com/MaelPorts/ControlCal"
     },
@@ -108,7 +108,7 @@
       "grade": "60%",
       "description": "A beginner-friendly pet care application for dog owners, featuring feeding schedules, vet appointments, and care tips.",
       "technologies": "HTML/CSS, JavaScript",
-      "skills": "User Authentication, Basic Problem Solving",
+      "skills": "HTML/CSS, JavaScript",
       "focus_area": "Programming Fundamentals",
       "assignment_type": "Coursework"
     }
@@ -119,7 +119,7 @@
       "title": "Portfolio Website",
       "description": "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects.",
       "technologies": "HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Node.js, Express, SQLite, Vercel, Git & GitHub",
-      "skills": "Frontend Development, Responsive Design, Backend Development, Database Management, Serverless Deployment",
+      "skills": "NextJS, HTML/CSS",
       "focus_area": "Full-Stack Web Development",
       "github_url": "https://github.com/MaelPorts/PersonalPortfolio",
       "live_demo_url": "https://mael-federo.vercel.app"
@@ -129,8 +129,8 @@
       "title": "BShark E-Commerce Site",
       "description": "Developed an E-Commerce website for a friend's business, BShark, which sells custom-made shark-themed clothing. The site features a user-friendly interface, product listings, and a secure checkout process.",
       "technologies": "React, React Router, Supabase, TypeScript",
-      "skills": "E-commerce Development, React Development, Database Integration, TypeScript Programming",
-      "focus_area": "E-commerce Solutions",
+      "skills": "ReactJS",
+      "focus_area": "E-commerce",
       "github_url": "https://github.com/MaelPorts/BShark",
       "live_demo_url": "https://b-shark-8y6l32nd6-mael-federos-projects.vercel.app/"
     },
@@ -139,7 +139,7 @@
       "title": "BMI Calculator",
       "description": "A clean and responsive BMI (Body Mass Index) calculator web application that allows users to input their height and weight to calculate their BMI and receive health category classification. The app features a modern, centered design with input validation and provides immediate feedback on BMI results including health categories (Underweight, Normal Weight, Overweight, Obese).",
       "technologies": "HTML5, CSS3, Vanilla JavaScript",
-      "skills": "JavaScript Programming, DOM Manipulation, Input Validation, Responsive Design",
+      "skills": "Javascript, HTML/CSS",
       "focus_area": "Health Applications",
       "github_url": "https://github.com/MaelPorts/Bmi-calculator",
       "live_demo_url": "https://maelports.github.io/Bmi-calculator/"
@@ -149,7 +149,7 @@
       "title": "To-Do List App",
       "description": "A clean and responsive task management web application that allows users to create, manage, and track their daily tasks.",
       "technologies": "React 18, Vite, Tailwind CSS, JavaScript ES6+, localStorage API, HTML5",
-      "skills": "React Development, State Management, Local Storage, Task Management, Modern Build Tools",
+      "skills": "ReactJS",
       "focus_area": "Task Management Applications",
       "github_url": "https://github.com/MaelPorts/To-Do",
       "live_demo_url": "https://maelports.github.io/To-Do/"
@@ -159,7 +159,7 @@
       "title": "KnightlyTracker - Discord Bot",
       "description": "A Discord bot that helps users track their gaming activities, manage their game libraries, and connect with friends.",
       "technologies": "Node.js, Discord.js, JavaScript ES6+",
-      "skills": "Discord Bot Development, State Management, API Integration, JavaScript Programming, Backend Development",
+      "skills": "Discord.js",
       "focus_area": "Gaming Applications",
       "github_url": "https://github.com/MaelPorts/KnightlyTracker",
       "live_demo_url": "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot"
