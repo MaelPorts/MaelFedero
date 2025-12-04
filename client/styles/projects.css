@@ -5,7 +5,7 @@
   -ms-user-select: text !important;
 }
 
-.project-card:hover * {
+.project-card:hover .project-card-body * {
   color: inherit !important;
   text-decoration: none !important;
 }
@@ -106,6 +106,10 @@
   color: white;
   padding: 24px;
   border-bottom: none;
+}
+
+.project-card-header * {
+  color: white;
 }
 
 .project-card-title {
