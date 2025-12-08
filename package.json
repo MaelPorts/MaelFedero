@@ -3,13 +3,7 @@
   "version": "1.0.0",
   "description": "Full-stack portfolio website for Mael Federo",
   "scripts": {
-    "build": "cd server && npm install",
-    "start": "cd server && node index.js",
-    "install-server": "cd server && npm install",
-    "install-all": "npm run install-server",
-    "start-server": "cd server && npm start",
-    "dev-server": "cd server && npm run dev",
-    "serve-client": "cd client && python -m http.server 3000 || php -S localhost:3000 || live-server --port=3000"
+    "build": "echo 'No build needed for static site'"
   },
   "repository": {
     "type": "git",
