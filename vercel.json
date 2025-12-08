@@ -14,6 +14,10 @@
       "destination": "/client/pages/contact.html"
     },
     {
+      "source": "/api/(.*)",
+      "destination": "/api/$1"
+    },
+    {
       "source": "/(.*)",
       "destination": "/client/$1"
     }
