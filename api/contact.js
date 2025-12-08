@@ -58,7 +58,7 @@ module.exports = async (req, res) => {
   } catch (error) {
     console.error("Error processing contact form:", error);
     return res.status(500).json({
-      error: "Failed to send message. Please try again later.",
+      error: error.message || "Failed to send message. Please try again later.",
     });
   }
 };
