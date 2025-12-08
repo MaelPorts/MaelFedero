@@ -1,7 +1,7 @@
 // Vercel Serverless Function to handle contact form submissions
 // This will send emails using a service like SendGrid or Resend
 
-export default async function handler(req, res) {
+module.exports = async (req, res) => {
   // Only allow POST requests
   if (req.method !== "POST") {
     return res.status(405).json({ error: "Method not allowed" });
@@ -57,4 +57,4 @@ export default async function handler(req, res) {
       error: "Failed to send message. Please try again later.",
     });
   }
-}
+};
