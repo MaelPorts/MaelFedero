@@ -1,15 +1,8 @@
 {
-  "version": 2,
-  "cleanUrls": true,
-  "trailingSlash": false,
-  "routes": [
-    {
-      "src": "/api/(.*)",
-      "dest": "/api/$1"
-    },
-    {
-      "src": "/(.*)",
-      "dest": "/client/$1"
-    }
+  "rewrites": [
+    { "source": "/projects", "destination": "/client/projects.html" },
+    { "source": "/contact", "destination": "/client/contact.html" },
+    { "source": "/", "destination": "/client/index.html" },
+    { "source": "/((?!api/).*)", "destination": "/client/$1" }
   ]
 }
