@@ -30,7 +30,7 @@ module.exports = async (req, res) => {
       },
       body: JSON.stringify({
         from: "onboarding@resend.dev", // Use your verified domain
-        to: "federomael@gmail.com",
+        to: "federo.mael@gmail.com",
         reply_to: email,
         subject: `Portfolio Contact from ${name}`,
         html: `
