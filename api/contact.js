@@ -43,10 +43,14 @@ module.exports = async (req, res) => {
       }),
     });
 
+    const result = await response.json();
+    
     if (!response.ok) {
-      throw new Error("Failed to send email");
+      console.error("Resend API error:", result);
+      throw new Error(result.message || "Failed to send email");
     }
 
+    console.log("Email sent successfully:", result);
     return res.status(200).json({
       success: true,
       message: "Message sent successfully!",
