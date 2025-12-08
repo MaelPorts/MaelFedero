@@ -103,19 +103,6 @@ export class ProjectCard {
                 }
                 
                 ${
-                  project.grade
-                    ? `
-                    <div class="grade-info mt-3">
-                        <div class="d-flex justify-content-between align-items-center p-2 bg-light rounded">
-                            <span class="fw-semibold">Grade Achieved:</span>
-                            <span class="badge bg-dark fs-6">${project.grade}</span>
-                        </div>
-                    </div>
-                `
-                    : ""
-                }
-                
-                ${
                   project.github_url || project.download_url
                     ? `
                     <div class="d-flex gap-2 mt-3">
