@@ -1,7 +1,7 @@
 {
   "name": "mael-federo-portfolio",
   "version": "1.0.0",
-  "description": "Full-stack portfolio website for Mael Federo",
+  "description": "Portfolio website for Mael Federo - Software Engineer",
   "repository": {
     "type": "git",
     "url": "https://github.com/MaelPorts/MaelFedero.git"
@@ -10,11 +10,9 @@
   "license": "MIT",
   "keywords": [
     "portfolio",
-    "full-stack",
+    "software-engineer",
     "web-development",
     "javascript",
-    "node.js",
-    "express",
-    "sqlite"
+    "vercel"
   ]
 }
