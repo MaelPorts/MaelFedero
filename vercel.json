@@ -1,18 +1,8 @@
 {
   "version": 2,
+  "cleanUrls": true,
+  "trailingSlash": false,
   "rewrites": [
-    {
-      "source": "/",
-      "destination": "/client/index.html"
-    },
-    {
-      "source": "/projects",
-      "destination": "/client/pages/projects.html"
-    },
-    {
-      "source": "/contact",
-      "destination": "/client/pages/contact.html"
-    },
     {
       "source": "/api/(.*)",
       "destination": "/api/$1"
