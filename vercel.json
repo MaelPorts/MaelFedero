@@ -2,6 +2,18 @@
   "version": 2,
   "rewrites": [
     {
+      "source": "/",
+      "destination": "/client/index.html"
+    },
+    {
+      "source": "/projects",
+      "destination": "/client/pages/projects.html"
+    },
+    {
+      "source": "/contact",
+      "destination": "/client/pages/contact.html"
+    },
+    {
       "source": "/(.*)",
       "destination": "/client/$1"
     }
