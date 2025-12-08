@@ -139,7 +139,7 @@ const technicalProjects = [
     id: 1,
     title: "Portfolio Website",
     description:
-      "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects. The application features a clean Bootstrap-based design with dynamic project management, serverless backend integration, and mobile-optimized user experience. Users can explore personal and academic projects organized by categories and years, with detailed project information including technologies used, skills developed, and grade achievements. The portfolio includes an engaging about section, academic performance showcase, and seamless navigation between different project types.",
+      "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects.",
     technologies:
       "HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Node.js, Express, SQLite, Vercel, Git & GitHub",
     skills:

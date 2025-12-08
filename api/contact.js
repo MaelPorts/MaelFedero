@@ -44,7 +44,7 @@ module.exports = async (req, res) => {
     });
 
     const result = await response.json();
-    
+
     if (!response.ok) {
       console.error("Resend API error:", result);
       throw new Error(result.message || "Failed to send email");

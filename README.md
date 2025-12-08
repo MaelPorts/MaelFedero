@@ -1,60 +1,243 @@
-# MaelFedero Portfolio
+# 🌐 Mael Federo - Portfolio
 
-This is a full-stack portfolio web application, designed to showcase professional experience, skills, and projects. The application serves as both an interactive CV and a demonstration of web development capabilities.
+> A modern, responsive portfolio website showcasing my journey as a Software Engineer and User Researcher.
 
-## Features
+[![Live Site](https://img.shields.io/badge/Live-maelfedero.dev-blue)](https://www.maelfedero.dev)
+[![Vercel](https://img.shields.io/badge/Deployed%20on-Vercel-black)](https://vercel.com)
 
-- **Modern Responsive Frontend:**  
-  Built with HTML, CSS, and vanilla JavaScript for smooth navigation and a clean, professional look.
-- **Dynamic Projects Section:**  
-  Projects are fetched dynamically from a SQLite database via a Node.js/Express backend.
-- **Backend API:**  
-  RESTful API endpoints allow for retrieving and (soon) adding projects without editing code or the database manually.
-- **Database Integration:**  
-  Uses SQLite for easy local development and data persistence.
-- **Separation of Concerns:**  
-  Clear separation between frontend and backend codebases.
+## ✨ Features
 
-## What’s Been Done So Far
+- **🎨 Modern Design**: Clean, professional interface with responsive layout
+- **📧 Contact Form**: Functional contact form powered by Resend API
+- **💼 Projects Showcase**: Dynamic display of academic and technical projects
+- **🚀 Serverless Architecture**: API functions deployed on Vercel
+- **📱 Mobile-First**: Fully responsive across all devices
+- **🔍 SEO Optimized**: Meta descriptions and clean URLs for better discoverability
 
-- Initial project structure and folder organization.
-- Express backend set up with CORS, static file serving, and SQLite integration.
-- API endpoint `/api/projects` for fetching project data.
-- Frontend fetches and displays projects dynamically.
-- Responsive and modern CSS for a professional appearance.
-- Sticky header and footer, card-style sections, and smooth scrolling navigation.
+## 🛠️ Tech Stack
 
-## What Still Needs Work
+**Frontend:**
 
-- **Adding Projects:**  
-  Implementing a frontend form or admin interface to add new projects directly from the site.
-- **Project Management:**  
-  Additional endpoints for editing and deleting projects.
-- **Styling Improvements:**  
-  Fine-tuning section backgrounds, ensuring the footer always sticks to the bottom, and improving mobile responsiveness.
-- **Error Handling & Validation:**  
-  Better user feedback for failed API requests or form submissions.
-- **Deployment:**  
-  Preparing the app for deployment to a production environment.
+- HTML5, CSS3, JavaScript (Vanilla)
+- Bootstrap 5.3.0
+- Bootstrap Icons
 
-## How to Run Locally
+**Backend:**
 
-1. Clone the repository.
-2. Install backend dependencies:
+- Vercel Serverless Functions (Node.js)
+- Resend API for email delivery
+
+**Deployment:**
+
+- Vercel (Automatic deployments from GitHub)
+- Custom domain: [www.maelfedero.dev](https://www.maelfedero.dev)
+
+## 📁 Project Structure
+
+```
+MaelFedero/
+├── api/                    # Serverless API functions
+│   ├── contact.js         # Contact form handler
+│   └── projects.js        # Projects data endpoint
+├── assets/                # Images, icons, and media
+│   ├── favicon.svg        # Custom </> logo favicon
+│   ├── image.jpg          # Profile picture
+│   └── icon/              # Social media icons
+├── scripts/               # JavaScript modules
+│   ├── components/        # Reusable UI components
+│   ├── core/             # Core framework code
+│   ├── data/             # Static data modules
+│   ├── modules/          # Feature modules
+│   └── utils/            # Utility functions
+├── styles/                # CSS stylesheets
+│   ├── modern.css         # Homepage styles
+│   ├── projects.css       # Projects page styles
+│   └── components.css     # Component styles
+├── index.html            # Homepage
+├── contact.html          # Contact page
+├── projects.html         # Projects page
+├── vercel.json           # Vercel configuration
+└── package.json          # Project metadata
+```
+
+## 🚀 Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- Git
+- Vercel CLI (optional, for local development)
+
+### Local Development
+
+1. **Clone the repository**
+
+   ```bash
+   git clone https://github.com/MaelPorts/MaelFedero.git
+   cd MaelFedero
    ```
-   cd server
+
+2. **Install dependencies**
+
+   ```bash
    npm install
    ```
-3. Start the backend server:
-   ```
-   node index.js
-   ```
-4. Visit `http://localhost:3001/Html/index.html` in your browser.
 
-## Contributing
+3. **Set up environment variables**
 
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+   Create a `.env` file in the root directory:
+
+   ```env
+   RESEND_API_KEY=your_resend_api_key_here
+   ```
+
+4. **Run locally with Vercel CLI**
+
+   ```bash
+   npm install -g vercel
+   vercel dev
+   ```
+
+5. **Open in browser**
+
+   Visit `http://localhost:3000`
+
+### Alternative: Simple Static Server
+
+For basic viewing without API functionality:
+
+```bash
+# Using Python
+python -m http.server 8000
+
+# Using Node.js
+npx serve
+```
+
+## 📧 Contact Form Setup
+
+The contact form uses [Resend](https://resend.com) for email delivery:
+
+1. Sign up at [resend.com](https://resend.com)
+2. Create an API key
+3. Add `RESEND_API_KEY` to Vercel environment variables
+4. Update recipient email in `api/contact.js` if needed
+
+**Note:** Resend's free tier requires emails to be sent to your verified account email address.
+
+## 🌟 Key Pages
+
+### Home (`/`)
+
+- Introduction and professional summary
+- Academic performance metrics
+- Certifications showcase
+- Quick links to projects and contact
+
+### Projects (`/projects`)
+
+- Dynamic project cards
+- Categories: University Projects & Technical Projects
+- Project details with technologies used
+
+### Contact (`/contact`)
+
+- Contact form with validation
+- Fields: Name, Email, Message
+- Real-time feedback on submission
+
+## 📝 Content Management
+
+### Updating Projects
+
+Projects are defined in `scripts/data/` as JavaScript modules:
+
+- `universityProjects.js`: Academic projects
+- `technicalProjects.js`: Personal/professional projects
+
+To add a new project:
+
+1. Edit the appropriate file
+2. Add a new object with project details
+3. Commit and push - Vercel auto-deploys
+
+### Updating Personal Info
+
+- **Profile**: Edit `index.html` sections
+- **Contact Email**: Update in `api/contact.js`
+- **Social Links**: Modify navigation in HTML files
+
+## 🔧 Configuration
+
+### Vercel Settings
+
+The `vercel.json` file configures:
+
+- Clean URLs (removes `.html` extensions)
+- Output directory set to root
+
+### API Functions
+
+Located in `/api` directory:
+
+- `contact.js`: POST endpoint for contact form
+- `projects.js`: GET endpoint serving project data
+
+## 🎨 Styling
+
+- Custom CSS in `styles/` directory
+- Bootstrap 5.3.0 for responsive grid and components
+- Color scheme: Black (#212529), Dark Grey (#474a4d), Blue (#0d6efd)
+- Custom favicon with `</>` logo
+
+## 🚢 Deployment
+
+### Automatic Deployment
+
+1. Push to `main` branch
+2. Vercel automatically builds and deploys
+3. Live at [www.maelfedero.dev](https://www.maelfedero.dev)
+
+### Environment Variables (Vercel)
+
+Set in Project Settings → Environment Variables:
+
+- `RESEND_API_KEY`: Your Resend API key
+
+### Custom Domain
+
+Domain configured in Vercel dashboard pointing to `maelfedero.dev`.
+
+## 🐛 Troubleshooting
+
+### Contact Form Not Working
+
+- Verify `RESEND_API_KEY` is set in Vercel
+- Check recipient email matches your Resend account
+- Review function logs in Vercel dashboard
+
+### 404 Errors
+
+- Ensure `vercel.json` has `cleanUrls: true`
+- Check file names are lowercase
+- Verify files are in root directory
+
+### API Functions Not Deploying
+
+- Confirm `/api` folder is in root
+- Check functions use CommonJS (`module.exports`)
+- Review build logs in Vercel
+
+## 📄 License
+
+MIT License - feel free to use this project as a template for your own portfolio!
+
+## 🤝 Connect
+
+- **Website**: [www.maelfedero.dev](https://www.maelfedero.dev)
+- **GitHub**: [@MaelPorts](https://github.com/MaelPorts)
+- **LinkedIn**: [Mael Federo](https://www.linkedin.com/in/mael-federo-38629429a/)
 
 ---
 
-© 2025 Mael Federo. All rights reserved.
+Built with ❤️ by Mael Federo © 2025
