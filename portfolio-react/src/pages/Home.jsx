@@ -13,7 +13,8 @@ export default function Home() {
             <div className="col-lg-6">
               <div className="hero-content">
                 <h1 className="display-4 fw-bold mb-3">
-                  Hi, I'm <span className="gradient-bold-name">Mael Federo</span>
+                  Hi, I'm{" "}
+                  <span className="gradient-bold-name">Mael Federo</span>
                 </h1>
                 <p className="lead mb-4">
                   Software Engineer, Web Developer & User Researcher
@@ -52,7 +53,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 text-center">
-              <div className="hero-image">
+              <div className="hero-image" style={{ paddingLeft: "60px" }}>
                 <img
                   src="/image.jpg"
                   alt="Profile Picture"
@@ -209,10 +210,12 @@ export default function Home() {
                   <div className="row">
                     <div className="col-12">
                       <p className="card-text fs-5">
-                        Hi, I'm <span className="gradient-bold-name">Mael Federo</span>, a Software Engineering graduate
-                        from the University of Portsmouth. I've been passionate
-                        about technology since childhood, from exploring how
-                        computers work to building my first HTML pages at 11.
+                        Hi, I'm{" "}
+                        <span className="gradient-bold-name">Mael Federo</span>,
+                        a Software Engineering graduate from the University of
+                        Portsmouth. I've been passionate about technology since
+                        childhood, from exploring how computers work to building
+                        my first HTML pages at 11.
                       </p>
 
                       <p className="card-text fs-5">
@@ -227,6 +230,158 @@ export default function Home() {
                         self-improvement - always striving to learn, grow, and
                         help others along the way.
                       </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Technical Skills Section */}
+      <section id="TechnicalSkills" className="py-5 bg-light">
+        <div className="container">
+          <div className="row">
+            <div className="col-12">
+              <h2 className="text-center mb-5 fw-bold">Technical Skills</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-lg-10 mx-auto">
+              <div className="row g-4">
+                {/* Languages */}
+                <div className="col-md-6">
+                  <div className="card h-100 border-0 shadow-sm">
+                    <div className="card-body">
+                      <h5 className="card-title mb-3">
+                        <i className="bi bi-code-slash text-primary me-2"></i>
+                        Languages
+                      </h5>
+                      <div className="d-flex flex-wrap gap-2">
+                        <span className="badge bg-light text-dark border">
+                          JavaScript
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          TypeScript
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Python
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Java
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Frameworks/Libraries */}
+                <div className="col-md-6">
+                  <div className="card h-100 border-0 shadow-sm">
+                    <div className="card-body">
+                      <h5 className="card-title mb-3">
+                        <i className="bi bi-box-seam text-primary me-2"></i>
+                        Frameworks & Libraries
+                      </h5>
+                      <div className="d-flex flex-wrap gap-2">
+                        <span className="badge bg-light text-dark border">
+                          React.js
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Node.js
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Express
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Next.js
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Databases */}
+                <div className="col-md-6">
+                  <div className="card h-100 border-0 shadow-sm">
+                    <div className="card-body">
+                      <h5 className="card-title mb-3">
+                        <i className="bi bi-database text-primary me-2"></i>
+                        Databases
+                      </h5>
+                      <div className="d-flex flex-wrap gap-2">
+                        <span className="badge bg-light text-dark border">
+                          PostgreSQL
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          MySQL
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          MongoDB
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Supabase
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Firebase
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Tools */}
+                <div className="col-md-6">
+                  <div className="card h-100 border-0 shadow-sm">
+                    <div className="card-body">
+                      <h5 className="card-title mb-3">
+                        <i className="bi bi-tools text-primary me-2"></i>
+                        Tools
+                      </h5>
+                      <div className="d-flex flex-wrap gap-2">
+                        <span className="badge bg-light text-dark border">
+                          Git
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          GitHub Actions
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Docker
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          HTML
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          CSS
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Vercel
+                        </span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Concepts */}
+                <div className="col-12">
+                  <div className="card border-0 shadow-sm">
+                    <div className="card-body">
+                      <h5 className="card-title mb-3">
+                        <i className="bi bi-lightbulb text-primary me-2"></i>
+                        Concepts & Methodologies
+                      </h5>
+                      <div className="d-flex flex-wrap gap-2">
+                        <span className="badge bg-light text-dark border">
+                          Agile
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          Object-Oriented Programming
+                        </span>
+                        <span className="badge bg-light text-dark border">
+                          SDLC
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>

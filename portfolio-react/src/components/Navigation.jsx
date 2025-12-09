@@ -6,8 +6,8 @@ export default function Navigation() {
   return (
     <nav className="navbar navbar-expand-lg navbar-light bg-white shadow-sm fixed-top">
       <div className="container">
-        <Link className="navbar-brand fw-bold" to="/">
-          <i className="bi bi-code-slash me-2"></i>Mael Federo
+        <Link className="navbar-brand" to="/">
+          <i className="bi bi-code-slash"></i>Mael Federo
         </Link>
         <button
           className="navbar-toggler"
@@ -22,7 +22,7 @@ export default function Navigation() {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
-                  location.pathname === "/" ? "fw-bold text-dark" : ""
+                  location.pathname === "/" ? "active" : ""
                 }`}
                 to="/"
               >
@@ -32,7 +32,7 @@ export default function Navigation() {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
-                  location.pathname === "/projects" ? "fw-bold text-dark" : ""
+                  location.pathname === "/projects" ? "active" : ""
                 }`}
                 to="/projects"
               >
@@ -42,7 +42,7 @@ export default function Navigation() {
             <li className="nav-item">
               <Link
                 className={`nav-link ${
-                  location.pathname === "/contact" ? "fw-bold text-dark" : ""
+                  location.pathname === "/contact" ? "active" : ""
                 }`}
                 to="/contact"
               >
