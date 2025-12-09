@@ -1,8 +1,4 @@
-// Serverless function for project data - works without persistent storage
-// This approach stores data in memory and is recreated on each function call
-
-// Project data
-const universityProjects = [
+export const universityProjects = [
   {
     id: 1,
     title: "Evaluating ADHD Technologies (Final Year Project)",
@@ -17,7 +13,6 @@ const universityProjects = [
       "Research, Analytical Thinking, Problem-solving, Empathy, Independent Work",
     focus_area: "UX Research / Accessibility / HCI",
     assignment_type: "Final Year Project",
-    download_url: "./assets/Fyp",
   },
   {
     id: 2,
@@ -29,12 +24,11 @@ const universityProjects = [
     description:
       "Group project to enhance an existing library management system. Assessed the current architecture and implemented improvements focused on scalability, data integrity, and maintainability. Delivered technical documentation outlining DevOps-oriented recommendations for deployment and system reliability.",
     technologies: "GitHub Actions, CI/CD Planning, ERDs, Docker",
-    skills: "Teamwork,Documentation, Problem-solving",
+    skills: "Teamwork, Documentation, Problem-solving",
     focus_area:
       "DevOps Principles, Infrastructure Improvement, System Performance, SDLC",
     assignment_type: "Coursework",
     github_url: "https://github.com/54d1q/soft-cult",
-    download_url: "./assets/Software Engineering Culture.docx",
   },
   {
     id: 3,
@@ -49,7 +43,6 @@ const universityProjects = [
     skills: "User Research, Critical Thinking, Survey, Interviews",
     focus_area: "Neurodivergent Accessibility, Inclusive Design",
     assignment_type: "Coursework",
-    download_url: "./assets/Usability Engineering coursework.docx",
   },
   {
     id: 4,
@@ -65,7 +58,6 @@ const universityProjects = [
       "Project Planning, Team Management, Risk Assessment, Process Optimization",
     focus_area: "Project Management",
     assignment_type: "Coursework",
-    download_url: "./assets/Projet Management.docx",
   },
   {
     id: 5,
@@ -132,7 +124,7 @@ const universityProjects = [
   },
 ];
 
-const technicalProjects = [
+export const technicalProjects = [
   {
     id: 1,
     title: "Portfolio Website",
@@ -198,44 +190,3 @@ const technicalProjects = [
       "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
   },
 ];
-
-export default async function handler(req, res) {
-  // Set CORS headers
-  res.setHeader("Access-Control-Allow-Origin", "*");
-  res.setHeader("Access-Control-Allow-Methods", "GET, POST, OPTIONS");
-  res.setHeader("Access-Control-Allow-Headers", "Content-Type");
-
-  if (req.method === "OPTIONS") {
-    res.status(200).end();
-    return;
-  }
-
-  try {
-    if (req.method === "GET") {
-      const { type, year } = req.query;
-
-      if (type === "university") {
-        let projects = universityProjects;
-        if (year) {
-          projects = universityProjects.filter(
-            (project) => project.year === parseInt(year)
-          );
-        }
-        res.status(200).json(projects);
-      } else if (type === "technical") {
-        res.status(200).json(technicalProjects);
-      } else {
-        // Get all projects
-        res.status(200).json({
-          university: universityProjects,
-          technical: technicalProjects,
-        });
-      }
-    } else {
-      res.status(405).json({ error: "Method not allowed" });
-    }
-  } catch (error) {
-    console.error("API Error:", error);
-    res.status(500).json({ error: error.message });
-  }
-}
