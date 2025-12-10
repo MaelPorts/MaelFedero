@@ -53,7 +53,7 @@ export default function Home() {
               </div>
             </div>
             <div className="col-lg-6 text-center">
-              <div className="hero-image" style={{ paddingLeft: "60px" }}>
+              <div className="hero-image">
                 <img
                   src="/image.jpg"
                   alt="Profile Picture"
