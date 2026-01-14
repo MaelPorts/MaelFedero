@@ -129,7 +129,7 @@ export const technicalProjects = [
     id: 1,
     title: "Wedding Canvas",
     description:
-      "A full stack web application that allows the user to create an event seating planner. User are able to create a guest list, create seating tables, and also seating arrangements",
+      "A full stack web application that allows the user to create an event seating plan. User are able to create a guest list, create seating tables, and also seating arrangements",
     technologies: "Express.js, React.js, SQLite",
     skills: "Web Application, Responsive Design",
     focus_area: "Problem solving",
