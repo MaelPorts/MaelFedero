@@ -167,8 +167,7 @@ export const technicalProjects = [
     description:
       "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects.",
     technologies: "HTML/CSS, React, Vercel",
-    skills:
-      "Frontend Development, Responsive Design, Backend Development, Database Management, Serverless Deployment",
+    skills: "FullStack, Web Application, Responsive Design",
     focus_area: "Web development",
     github_url: "https://github.com/MaelPorts/PersonalPortfolio",
     live_demo_url: "https://maelfedero.dev/",
