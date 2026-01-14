@@ -189,4 +189,28 @@ export const technicalProjects = [
     live_demo_url:
       "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
   },
+  {
+    id: 6,
+    title: "Wedding Canvas",
+    description:
+      "A full stack web application that allows the user to create an event seating planner. User are able to create a guest list, create seating tables, and also seating arrangements",
+    technologies: "Express.js, React.js, SQLite",
+    skills: "Web Application, Responsive Design",
+    focus_area: "Problem solving",
+    github_url: "https://github.com/MaelPorts/WeddingCanva",
+    live_demo_url:
+      "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
+  },
+  {
+    id: 7,
+    title: "Win Counter",
+    description:
+      "A small web application that allows the user to keep track of the Win/Loss/Draw statistics between two players (1vs1 format)",
+    technologies: "Javascript, HTML/CSS",
+    skills: "Web Application, Responsive Design",
+    focus_area: "Problem solving",
+    github_url: "https://github.com/MaelPorts/WinCounter",
+    live_demo_url:
+      "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
+  },
 ];
