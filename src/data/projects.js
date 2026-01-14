@@ -127,70 +127,6 @@ export const universityProjects = [
 export const technicalProjects = [
   {
     id: 1,
-    title: "Portfolio Website",
-    description:
-      "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects.",
-    technologies:
-      "HTML5, CSS3, JavaScript (ES6+), Bootstrap 5, Node.js, Express, SQLite, Vercel, Git & GitHub",
-    skills:
-      "Frontend Development, Responsive Design, Backend Development, Database Management, Serverless Deployment",
-    focus_area: "Web development",
-    github_url: "https://github.com/MaelPorts/PersonalPortfolio",
-    live_demo_url: "https://maelfedero.dev/",
-  },
-  {
-    id: 2,
-    title: "BShark E-Commerce Site",
-    description:
-      "Developed an E-Commerce website for a friend of mine who sells clothes",
-    technologies: "React, React Router, Supabase, TypeScript",
-    skills:
-      "E-commerce Development, React Development, Database Integration, TypeScript Programming",
-    focus_area: "E-commerce",
-    github_url: "https://github.com/MaelPorts/BShark",
-    live_demo_url:
-      "https://b-shark-8y6l32nd6-mael-federos-projects.vercel.app/",
-  },
-  {
-    id: 3,
-    title: "BMI Calculator",
-    description:
-      "A clean and responsive BMI (Body Mass Index) calculator web application that allows users to input their height and weight to calculate their BMI and receive health category classification.",
-    technologies: "HTML5, CSS3, Vanilla JavaScript",
-    skills:
-      "JavaScript Programming, DOM Manipulation, Input Validation, Responsive Design",
-    focus_area: "Web Application",
-    github_url: "https://github.com/MaelPorts/Bmi-calculator",
-    live_demo_url: "https://maelports.github.io/Bmi-calculator/",
-  },
-  {
-    id: 4,
-    title: "To-Do List App",
-    description:
-      "A clean and responsive task management web application that allows users to create, manage, and track their daily tasks.",
-    technologies:
-      "React 18, Vite, Tailwind CSS, JavaScript ES6+, localStorage API, HTML5",
-    skills:
-      "React Development, State Management, Local Storage, Task Management, Modern Build Tools",
-    focus_area: "Task Management Applications",
-    github_url: "https://github.com/MaelPorts/To-Do",
-    live_demo_url: "https://maelports.github.io/To-Do/",
-  },
-  {
-    id: 5,
-    title: "KnightlyTracker - Discord Bot",
-    description:
-      "A Discord bot that helps users track their gaming activities, manage their game libraries, and connect with friends.",
-    technologies: "Node.js, Discord.js, JavaScript ES6+",
-    skills:
-      "Discord Bot Development, State Management, API Integration, JavaScript Programming, Backend Development",
-    focus_area: "Gaming Applications",
-    github_url: "https://github.com/MaelPorts/KnightlyTracker",
-    live_demo_url:
-      "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
-  },
-  {
-    id: 6,
     title: "Wedding Canvas",
     description:
       "A full stack web application that allows the user to create an event seating planner. User are able to create a guest list, create seating tables, and also seating arrangements",
@@ -202,7 +138,19 @@ export const technicalProjects = [
       "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
   },
   {
-    id: 7,
+    id: 2,
+    title: "BShark E-Commerce Site",
+    description:
+      "Developed an E-Commerce website for a friend of mine who sells clothes",
+    technologies: "React, React Router, Supabase, TypeScript",
+    skills: "Full-Stack, React",
+    focus_area: "E-commerce",
+    github_url: "https://github.com/MaelPorts/BShark",
+    live_demo_url:
+      "https://b-shark-8y6l32nd6-mael-federos-projects.vercel.app/",
+  },
+  {
+    id: 3,
     title: "Win Counter",
     description:
       "A small web application that allows the user to keep track of the Win/Loss/Draw statistics between two players (1vs1 format)",
@@ -210,6 +158,30 @@ export const technicalProjects = [
     skills: "Web Application, Responsive Design",
     focus_area: "Problem solving",
     github_url: "https://github.com/MaelPorts/WinCounter",
+    live_demo_url:
+      "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
+  },
+  {
+    id: 4,
+    title: "Portfolio Website",
+    description:
+      "A modern, responsive portfolio website showcasing professional experience, academic achievements, and personal projects.",
+    technologies: "HTML/CSS, React, Vercel",
+    skills:
+      "Frontend Development, Responsive Design, Backend Development, Database Management, Serverless Deployment",
+    focus_area: "Web development",
+    github_url: "https://github.com/MaelPorts/PersonalPortfolio",
+    live_demo_url: "https://maelfedero.dev/",
+  },
+  {
+    id: 5,
+    title: "KnightlyTracker - Discord Bot",
+    description:
+      "A Discord bot that helps users track their chess.com gaming activities, manage their game libraries, and connect with friends.",
+    technologies: "Node.js, Discord.js, JavaScript ES6+",
+    skills: "Discord Bot, Backend Development",
+    focus_area: "Bot",
+    github_url: "https://github.com/MaelPorts/KnightlyTracker",
     live_demo_url:
       "https://discord.com/oauth2/authorize?client_id=1398871714024390717&permissions=83968&integration_type=0&scope=bot",
   },
